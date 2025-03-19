@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bão mạng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #e91e63;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .news-wrapper {
+            display: flex;
+            gap: 3%;
+            flex-wrap: wrap;
+        }
+        .news {
+            flex: 1;
+            min-width: 30%;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .news img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .news {
+                min-width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .news {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Bão mạng</div>
+        <div class="news-wrapper">
+            <div class="news">
+                <img src="https://i1-vnexpress.vnecdn.net/2025/03/18/DJI-20250318153237-0007-D-1742307684.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=r7R7OnqB0H3AQ09HHds46Q" alt="Tin 1">
+                <p>Diện mạo ga T3 Tân Sơn Nhất trước thời điểm hoạt động</p>
+            </div>
+            <div class="news">
+                <img src="https://i1-vnexpress.vnecdn.net/2025/03/18/5563187178137268731a-174231130-1698-1389-1742311352.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=PsMAaOHujKPdfi9uRkdXZQ" alt="Tin 2">
+                <p>Nga đồng ý ngừng tấn công hạ tầng năng lượng Ukraine trong 30 ngày</p>
+            </div>
+            <div class="news">
+                <img src="https://i1-sohoa.vnecdn.net/2025/03/18/lq-02451-jpg-1728553547-172855-6708-8995-1742298330.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=CBveLftckHq-zqGCQw61aQ" alt="Tin 3">
+                <p>Tốc độ 5G của các nhà mạng được công khai</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
